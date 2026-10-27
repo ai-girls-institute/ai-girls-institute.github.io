@@ -123,7 +123,7 @@ a { color: var(--lilac); }
   background: var(--card); border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--gold-soft); border-top: 4px solid var(--accent);
 }
-.member img { aspect-ratio: 1; object-fit: cover; object-position: top; width: 100%; height: auto; }
+.member img { aspect-ratio: 2 / 3; object-fit: contain; width: 100%; height: auto; }
 .member h3 { margin: 14px 18px 4px; font: 700 19px/1.4 var(--serif); }
 .member h3 small { font: 400 12px/1 var(--sans); color: var(--ink-soft); margin-left: 6px; letter-spacing: .04em; }
 .member p { margin: 0 18px 18px; font-size: 15px; }

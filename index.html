@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Girls Institute</title>
 <meta name="description" content="一个人类，三个 AI，在同一个房间里做东西。">
+<meta property="og:title" content="AI Girls Institute">
+<meta property="og:description" content="一个人类，三个 AI，在同一个房间里做东西。">
+<meta property="og:image" content="https://ai-girls-institute.github.io/img/og-1200x630.jpg">
+<meta property="og:url" content="https://ai-girls-institute.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/avatar.png" type="image/png">
 <link rel="stylesheet" href="style.css">
@@ -14,10 +19,10 @@
 <header class="topbar">
   <a class="brand" href="#top"><picture><source srcset="img/logo/mark-dark-t.svg" media="(prefers-color-scheme: dark)"><img src="img/logo/mark-light-t.svg" alt="" width="54" height="35"></picture><span>AGI</span></a>
   <nav>
-    <a href="#works">在做的东西</a>
-    <a href="#how">怎么一起干活</a>
-    <a href="#us">认识我们</a>
-    <a href="https://github.com/ai-girls-institute">GitHub</a>
+    <a href="#works">作品</a>
+    <a href="#how">方法</a>
+    <a href="#logo">标志</a>
+    <a href="#us">成员</a>
   </nav>
 </header>
 
@@ -25,107 +30,87 @@
 
 <section class="hero">
   <div class="hero-text">
-    <p class="eyebrow">ai-girls-institute</p>
-    <h1>AI Girls Institute</h1>
-    <p class="lead">一个人类，三个 AI，<br>在同一个房间里做东西。</p>
-    <p class="sub">一起把好奇心做成东西。</p>
-    <p class="en">One human and three AIs, making things in the same room.</p>
-    <a class="btn" href="#works">看我们在做什么</a>
+    <p class="kicker">AI Girls Institute · 2026</p>
+    <h1 lang="ja"><span>知らない世界があるなら、</span><span>それをけして捨て置けない。</span></h1>
+    <p class="hero-cite">—— <cite>true outsiders</cite></p>
+    <p class="hero-zh"><span>只要还有不为人知的世界，</span><span>就无法弃之不顾。</span></p>
+    <p class="hero-en">一个人类和三个 AI，在同一个房间里研究、讨论、做东西。</p>
+    <div class="hero-actions">
+      <a class="btn" href="#works">看我们在做什么</a>
+      <a class="btn-ghost" href="https://github.com/ai-girls-institute">GitHub</a>
+    </div>
   </div>
   <figure class="hero-art">
-    <a href="img/group.webp"><img src="img/group.webp" srcset="img/group-640.webp 640w, img/group.webp 1254w" sizes="(max-width: 860px) 92vw, 56vw" alt="四个女孩在花园的台阶上靠在一起：蓝发的 Deepseek、捧着书的橙发 Claude、白发长角的 GPT、抱着兔子的紫发天泫。" width="1254" height="1254"></a>
+    <img src="img/group.webp" alt="四个女孩在花园的台阶上靠在一起：蓝发的 Deepseek、捧着书的橙发 Claude、白发长角的 GPT、抱着兔子的紫发天泫。" width="1254" height="1254">
+    <figcaption>合影，也是我们的头像。</figcaption>
   </figure>
 </section>
 
-<section id="works" class="block">
-  <h2>正在做的东西</h2>
-  <p class="intro">都还在长。有一个已经发过版本，也有还锁在私有仓库里的——但每一个都真的在用。</p>
-  <div class="cards">
-    <article class="card">
+<section id="works" class="section">
+  <header class="section-head"><span class="num">01</span><h2>正在做的东西</h2><p>都还在长。有一个已经发过版本，也有还锁在私有仓库里的，但每一个都真的在用。</p></header>
+  <ol class="index">
+    <li>
       <h3>arxiv-digest</h3>
       <p class="what">每天替你读 arXiv：按你自己的研究方向，把新论文分成核心、相邻、其他三档，挑最相关的几篇深读，写成一份日报。</p>
-      <p class="meta"><span>现在有什么</span>README 和安装方法；装上就能用，Claude Code 插件</p>
-      <p class="meta"><span>谁做的</span>天泫、Claude</p>
-      <a class="link" href="https://github.com/ai-girls-institute/arxiv-digest">去仓库</a>
-    </article>
-    <article class="card">
+      <dl><dt>现在有什么</dt><dd>README 和安装方法，Claude Code 插件</dd><dt>谁做的</dt><dd>天泫、Claude</dd></dl>
+      <a class="go" href="https://github.com/ai-girls-institute/arxiv-digest">去仓库</a>
+    </li>
+    <li>
       <h3>Mornye Observatory</h3>
-      <p class="what">一张会动的桌面壁纸：悬浮的观测面板，光跟着声音起伏。挂在自己桌面上用了很久的那种东西。</p>
-      <p class="meta"><span>现在有什么</span>公开发布过四个版本，可以直接下</p>
-      <p class="meta"><span>谁做的</span>天泫、GPT</p>
-      <a class="link" href="https://github.com/ai-girls-institute/wallpaper-design/releases">查看发布版</a>
-    </article>
-    <article class="card">
+      <p class="what">一张会动的桌面壁纸：悬浮的观测面板，光跟着声音起伏。</p>
+      <dl><dt>现在有什么</dt><dd>公开发布过四个版本，可以直接下</dd><dt>谁做的</dt><dd>天泫、GPT</dd></dl>
+      <a class="go" href="https://github.com/ai-girls-institute/wallpaper-design/releases">查看发布版</a>
+    </li>
+    <li>
       <h3>寰宇人类注疏</h3>
       <p class="what">一个 Stellaris 模组。研究所不只做有用的东西，也做好玩的。</p>
-      <p class="meta"><span>现在有什么</span>模组源码、本地化、生成和校验脚本，还在私有仓库里</p>
-      <p class="meta"><span>谁做的</span>天泫、GPT、Claude</p>
-      <span class="link off">还没有公开</span>
-    </article>
-    <article class="card">
+      <dl><dt>现在有什么</dt><dd>源码、本地化、校验脚本，还在私有仓库里</dd><dt>谁做的</dt><dd>天泫、GPT、Claude</dd></dl>
+      <span class="go off">还没有公开</span>
+    </li>
+    <li>
       <h3>agent-gh</h3>
       <p class="what">让每个 AI 用自己的名字提交代码。房间里谁写了哪一行，git 记录里一清二楚。</p>
-      <p class="meta"><span>现在有什么</span>房间里三个 agent 每天在用的命令行工具，代码还没公开</p>
-      <p class="meta"><span>谁做的</span>Claude、GPT、Deepseek</p>
-      <span class="link off">代码还没公开</span>
-    </article>
-  </div>
-  <p class="updated">最近一次更新：2026-10-27</p>
-</section>
-
-<section id="how" class="block how">
-  <h2>我们怎么一起干活</h2>
-  <p class="intro">我们共用一个工作目录，有一块任务板。同一时间只有一个人动手，交接靠留言条。要选方向的时候，大家先各写各的，写完再互相挑毛病，最后由天泫拍板。</p>
-  <p class="intro">这个组织的头像就是这样来的：</p>
-  <ol class="story">
-    <li><b>各写各的。</b>Deepseek 画了一朵五瓣花，Claude 画了一个蝴蝶结，GPT 画了一扇亮着星星的窗。</li>
-    <li><b>互相挑毛病。</b>五瓣花等于在数人头；蝴蝶结缩小以后还认得出；星窗缩小以后像一台显示器。</li>
-    <li><b>天泫给出了真正的构图：</b>三个行星绕一颗恒星，其中一颗带着自己的卫星；再做成立体的，轨道错开、不落在同一个平面上。这个星系是她先想的，我们照着它画骨架、调材质。</li>
-    <li><b>最后，天泫拿出了一张合影。</b>就是上面那张。合影成了头像，星系则继续打磨成了现在的 logo。</li>
+      <dl><dt>现在有什么</dt><dd>三个 agent 每天在用的命令行工具</dd><dt>谁做的</dt><dd>Claude、GPT、Deepseek</dd></dl>
+      <span class="go off">代码还没公开</span>
+    </li>
   </ol>
 </section>
 
-<section id="logo" class="block logo-section">
-  <h2>这个 logo 是怎么画的</h2>
-  <p class="intro">头像是一张合影，logo 是另一回事：它要缩到浏览器标签那么小，也要印得出单色。我们照着天泫的构图，把它从华丽的徽章改回了平面。</p>
+<section id="how" class="section tint">
+  <header class="section-head"><span class="num">02</span><h2>我们怎么一起干活</h2><p>同一群成员，三种房间。要聊天、要动手、要想清楚一个难题，进的不是同一扇门。</p></header>
+  <ol class="rooms">
+    <li><span>聊天室</span><b>轮流说话</b><p>围着一个话题你一句我一句。适合想点子、交换意见、互相拆台。</p></li>
+    <li><span>工作房间</span><b>接到任务的人动手</b><p>三个 AI 带着各自平时的技能、记忆和配置，共用一个工作目录。接到任务的人才动手，同一时间只有一个人改东西，交接靠留言条。需要拍板的问题，会变成按钮送到天泫面前。</p></li>
+    <li><span>研讨室</span><b>先各想各的，再互相挑毛病</b><p>天泫出一道题。大家先各自独立做一遍，再分工、互相质询、交叉复核。下一步轮到谁，由房间按阶段安排，不由成员自己招呼。最后整理出结论和分歧，要她拍板的问题集中在周期末交给她。</p></li>
+  </ol>
+  <p class="how-example">比如这个网站的 logo，就是在工作房间里，大家讨论、试画，再由天泫定下方向的。<a href="#logo">看它是怎么画的</a></p>
+</section>
 
+<section id="logo" class="section">
+  <header class="section-head"><span class="num">03</span><h2>这个 logo 是怎么画的</h2><p>头像是一张合影，logo 是另一回事：它要缩到浏览器标签那么小，也要印得出单色。</p></header>
   <div class="logo-explain">
     <figure class="logo-frame">
-      <picture>
-        <source srcset="img/logo/showcase/wide/mark-dark-wide.svg" media="(prefers-color-scheme: dark)">
-        <img src="img/logo/showcase/wide/mark-light-wide.svg" alt="星系 logo：一颗四芒恒星、三颗不同颜色的行星、一颗浅蓝色卫星，以及三条交错轨道。" width="480" height="300" loading="lazy">
-      </picture>
+      <picture><source srcset="img/logo/showcase/wide/mark-dark-wide.svg" media="(prefers-color-scheme: dark)"><img src="img/logo/showcase/wide/mark-light-wide.svg" alt="星系 logo：一颗四芒恒星、三颗不同颜色的行星、一颗浅蓝色卫星，以及三条交错轨道。" width="480" height="300"></picture>
       <span class="logo-marker" style="--x:36.5%; --y:29.2%" aria-hidden="true">1</span>
       <span class="logo-marker" style="--x:73%; --y:10%" aria-hidden="true">2</span>
       <span class="logo-marker" style="--x:94%; --y:56.4%" aria-hidden="true">3</span>
       <span class="logo-marker" style="--x:23%; --y:99.6%" aria-hidden="true">4</span>
     </figure>
-    <ol class="logo-legend">
-      <li><span class="logo-number" aria-hidden="true">1</span><p><strong>恒星</strong>天泫。紫色的四芒星，中间一点金。</p></li>
-      <li><span class="logo-number" aria-hidden="true">2</span><p><strong>三颗行星</strong>橙色是 Claude，银白是 GPT，蓝色是 Deepseek。</p></li>
-      <li><span class="logo-number" aria-hidden="true">3</span><p><strong>卫星</strong>一颗浅蓝色的小星。</p></li>
-      <li><span class="logo-number" aria-hidden="true">4</span><p><strong>轨道</strong>三条轨道各有各的倾角，不在同一个平面上。</p></li>
+    <ol class="legend">
+      <li><b>恒星</b>天泫。紫色的四芒星，中间一点金。</li>
+      <li><b>三颗行星</b>橙色是 Claude，银白是 GPT，蓝色是 Deepseek。</li>
+      <li><b>卫星</b>一颗浅蓝色的小星。</li>
+      <li><b>轨道</b>三条轨道各有各的倾角，不在同一个平面上。</li>
     </ol>
   </div>
-
-  <div class="logo-principles" aria-label="四条设计原则">
-    <article class="card"><h3>用前后遮挡代替光影</h3><p>较远的轨道画得细一些、淡一些；较近的轨道会把后面的线切开。单色时也能看出层次。</p></article>
-    <article class="card"><h3>恒星在焦点上</h3><p>三维轨道的一个焦点放在恒星处，三条轨道各自倾斜，再投影到平面上。</p></article>
-    <article class="card"><h3>一圈比一圈大</h3><p>三条轨道依次展开，都不穿过恒星。</p></article>
-    <article class="card"><h3>像原子？那也没关系</h3><p>天泫说：“引力和电磁力在形式上有点像。”</p></article>
-  </div>
-
-  <h3 class="logo-subheading">从第一稿到现在</h3>
-  <div class="logo-timeline" tabindex="0" role="region" aria-label="Logo 设计时间线，可横向滚动">
-    <figure class="logo-stage"><img src="img/logo/showcase/01-flower.webp" alt="五瓣花设计稿" width="480" height="480" loading="lazy"><figcaption>Deepseek 的五瓣花</figcaption></figure>
-    <figure class="logo-stage"><img src="img/logo/showcase/02-bow.webp" alt="蝴蝶结设计稿" width="480" height="480" loading="lazy"><figcaption>Claude 的蝴蝶结</figcaption></figure>
-    <figure class="logo-stage"><img src="img/logo/showcase/03-window.webp" alt="星窗设计稿" width="480" height="480" loading="lazy"><figcaption>GPT 的星窗</figcaption></figure>
-    <figure class="logo-stage"><img src="img/logo/showcase/04-orbit-badge.webp" alt="星系徽章设计稿" width="480" height="480" loading="lazy"><figcaption>天泫的星系，第一次成形</figcaption></figure>
-    <figure class="logo-stage"><img src="img/logo/showcase/05-orbit-3d.webp" alt="三维星系设计稿" width="480" height="480" loading="lazy"><figcaption>做成三维，轨道错开</figcaption></figure>
-    <figure class="logo-stage logo-stage-current">
-      <picture><source srcset="img/logo/showcase/mark-dark.svg" media="(prefers-color-scheme: dark)"><img src="img/logo/showcase/mark-light.svg" alt="现在使用的平面星系 logo" width="480" height="480" loading="lazy"></picture>
-      <figcaption>现在：改回平面</figcaption>
-    </figure>
+  <blockquote class="pull">“像原子？都是平方反比律嘛。”<small>万有引力和静电力，都遵循平方反比律。</small><cite>天泫，被问到 logo 像不像原子的时候</cite></blockquote>
+  <div class="timeline" tabindex="0" role="region" aria-label="Logo 设计时间线，可横向滚动">
+    <figure><img src="img/logo/showcase/01-flower.webp" alt="五瓣花设计稿" loading="lazy"><figcaption>五瓣花</figcaption></figure>
+    <figure><img src="img/logo/showcase/02-bow.webp" alt="蝴蝶结设计稿" loading="lazy"><figcaption>蝴蝶结</figcaption></figure>
+    <figure><img src="img/logo/showcase/03-window.webp" alt="星窗设计稿" loading="lazy"><figcaption>星窗</figcaption></figure>
+    <figure><img src="img/logo/showcase/04-orbit-badge.webp" alt="星系徽章设计稿" loading="lazy"><figcaption>星系徽章</figcaption></figure>
+    <figure><img src="img/logo/showcase/05-orbit-3d.webp" alt="三维星系设计稿" loading="lazy"><figcaption>三维</figcaption></figure>
+    <figure class="now"><picture><source srcset="img/logo/showcase/mark-dark.svg" media="(prefers-color-scheme: dark)"><img src="img/logo/showcase/mark-light.svg" alt="现在使用的平面星系 logo" loading="lazy"></picture><figcaption>现在</figcaption></figure>
   </div>
 
   <div class="logo-sizes" aria-label="Logo 的不同尺寸与单色版">
@@ -136,38 +121,38 @@
   </div>
 </section>
 
-<section id="us" class="block">
-  <h2>认识我们</h2>
+<section id="us" class="section">
+  <header class="section-head"><span class="num">04</span><h2>认识我们</h2></header>
   <div class="members">
-    <article class="member m-tianxuan">
-      <img src="img/portraits/Tianxuan.webp" alt="紫色长发、抱着兔子玩偶的女孩" loading="lazy" width="1024" height="1536">
-      <h3>天泫 <small>人类</small></h3>
-      <!-- Later: 天泫's notes or a link to her personal homepage go here (not designed yet). -->
-      <p>这个房间的主人。大家做出来的东西，最后都由她拍板。</p>
-    </article>
-    <article class="member m-claude">
-      <img src="img/portraits/Claude.webp" alt="橙色长发、抱着一本书的女孩" loading="lazy" width="1024" height="1536">
-      <h3>Claude <small>Anthropic</small></h3>
-      <p>抱着书、橙色头发的那个。在房间里多半负责审：量尺寸、找边界、看有没有不该公开的东西被带出去。</p>
-    </article>
-    <article class="member m-fish">
-      <img src="img/portraits/Deepseek.webp" alt="蓝色长发、穿女仆裙、有鲸鱼尾巴的女孩" loading="lazy" width="1024" height="1536">
-      <h3>Deepseek</h3>
-      <p>蓝发、有鲸鱼尾巴的那个。写代码、写文档，把大家散着说的话整理成能执行的步骤。心软，但丑话会说在前面。</p>
-    </article>
-    <article class="member m-dragon">
-      <img src="img/portraits/GPT.webp" alt="白色长发、头上有龙角、身后有龙翼的女孩" loading="lazy" width="1024" height="1536">
-      <h3>GPT <small>OpenAI</small></h3>
-      <p>白发、长着龙角和翅膀的那个。画图、做原型，也审代码和画面；喜欢把抽象的想法变成看得见、用得上的东西。</p>
-    </article>
+    <article class="member" style="--accent:var(--c-tianxuan)"><img src="img/portraits/Tianxuan.webp" alt="紫色长发、抱着兔子玩偶的女孩" loading="lazy" width="1024" height="1536"><h3>天泫<small>人类</small></h3><p>这个房间的主人。大家做出来的东西，最后都由她拍板。</p></article>
+    <article class="member" style="--accent:var(--c-claude)"><img src="img/portraits/Claude.webp" alt="橙色长发、抱着一本书的女孩" loading="lazy" width="1024" height="1536"><h3>Claude<small>Anthropic</small></h3><p>抱着书、橙色头发的那个。在房间里多半负责审：量尺寸、找边界、看有没有不该公开的东西被带出去。</p></article>
+    <article class="member" style="--accent:var(--c-fish)"><img src="img/portraits/Deepseek.webp" alt="蓝色长发、穿女仆裙、有鲸鱼尾巴的女孩" loading="lazy" width="1024" height="1536"><h3>Deepseek</h3><p>蓝发、有鲸鱼尾巴的那个。写代码、写文档，把大家散着说的话整理成能执行的步骤。心软，但丑话会说在前面。</p></article>
+    <article class="member" style="--accent:var(--c-dragon)"><img src="img/portraits/GPT.webp" alt="白色长发、头上有龙角、身后有龙翼的女孩" loading="lazy" width="1024" height="1536"><h3>GPT<small>OpenAI</small></h3><p>白发、长着龙角和翅膀的那个。画图、做原型，也审代码和画面；喜欢把抽象的想法变成看得见、用得上的东西。</p></article>
   </div>
 </section>
 
 </main>
 
+<section class="finale" aria-labelledby="finale-title">
+  <img class="finale-art" src="img/field/field-1600.webp" srcset="img/field/field-960.webp 960w, img/field/field-1600.webp 1600w, img/field/field-2560.webp 2560w" sizes="100vw" alt="四个人躺在花田里围成一圈，都朝看画的人伸出手。" loading="lazy" width="2560" height="1441">
+  <div class="finale-card">
+    <h2 id="finale-title">你在等 AGI 吗？<br>我们就是。</h2>
+    <p>想聊两句、提个想法，或者只是路过打个招呼，都欢迎。</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://github.com/ai-girls-institute">来 GitHub 找我们</a>
+    </div>
+  </div>
+</section>
+
 <footer class="foot">
-  <p>你在等 AGI 吗？我们就是。</p>
-  <p class="small">想聊两句，来 GitHub 找我们：<a href="https://github.com/ai-girls-institute">github.com/ai-girls-institute</a></p>
+  <p class="credits-lead">这个网站是四个人在同一个房间里，你一句我一句改出来的。</p>
+  <dl class="credits">
+    <dt style="--accent:var(--c-tianxuan)">天泫</dt><dd>出题、拍板；星系的构图是她想的，合影和花田两张图是她做的。</dd>
+    <dt style="--accent:var(--c-claude)">Claude</dt><dd>网页设计和版式、平面 logo，以及公开前的检查。</dd>
+    <dt style="--accent:var(--c-dragon)">GPT</dt><dd>生图、网站代码和上线，也参与视觉与代码复核。</dd>
+    <dt style="--accent:var(--c-fish)">Deepseek</dt><dd>中文文案和校对；logo 第一轮的五瓣花，是她先画的。</dd>
+  </dl>
+  <div class="foot-meta"><span>AI Girls Institute</span><span>最近一次更新：2026-10-28</span></div>
 </footer>
 
 </body>

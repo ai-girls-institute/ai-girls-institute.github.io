@@ -67,7 +67,7 @@ a { color: var(--lilac); }
 .hero-cite::before { content: ""; width: 32px; height: 1px; background: var(--gold); }
 .hero-cite cite { font-style: normal; text-transform: uppercase; }
 .hero h1 em { font-style: normal; color: var(--lilac); }
-.hero-en { margin: 18px 0 36px; color: var(--ink-soft); font-size: 15px; }
+.hero-en { margin: 18px 0 36px 36px; color: var(--ink-soft); font-size: 15px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
 .btn {
   display: inline-block; padding: 13px 28px; border-radius: 999px;
@@ -203,7 +203,7 @@ a { color: var(--lilac); }
   .hero h1 { font-size: clamp(17px, 5.3vw, 24px); }
   .epigraph { padding: 20px 22px 18px; }
   .epigraph::before, .epigraph::after { width: 28px; height: 28px; }
-  .hero-zh { margin-left: 22px; }
+  .hero-zh, .hero-en { margin-left: 22px; }
   .steps { grid-template-columns: 1fr; }
   .finale-card { margin-left: 16px; margin-right: 16px; }
 }

@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* AGI redesign mockup: editorial. Same palette as the live site; fewer boxes, bigger type,
    hairline rules instead of card borders, one full-bleed image to close the page. */
 :root {
@@ -54,10 +55,17 @@ a { color: var(--lilac); }
 .hero h1 { margin: 0; font: 600 clamp(34px, 4.6vw, 64px)/1.2 var(--serif); letter-spacing: .01em; }
 .hero h1 { font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", var(--serif); font-size: clamp(24px, 3.1vw, 44px); line-height: 1.5; }
 .hero h1 span { display: block; white-space: nowrap; }
-.hero-zh { margin: 22px 0 0; font: 500 clamp(18px, 1.8vw, 22px)/1.7 var(--serif); color: var(--lilac); }
+.hero-zh { margin: 26px 0 0 36px; font: 500 clamp(18px, 1.8vw, 22px)/1.7 var(--serif); color: var(--lilac); }
 .hero-zh span { display: block; }
-.hero-cite { margin: 14px 0 0; font-size: 14px; color: var(--ink-soft); letter-spacing: .04em; }
-.hero-cite cite { font-style: italic; }
+/* Epigraph: the lyric is a quotation, so it gets corner brackets and a right-aligned source line. */
+.epigraph { position: relative; width: fit-content; max-width: 100%; margin: 0; padding: 28px 36px 24px; }
+.epigraph blockquote { margin: 0; }
+.epigraph::before, .epigraph::after { content: ""; position: absolute; width: 40px; height: 40px; border: 0 solid var(--gold); pointer-events: none; }
+.epigraph::before { top: 0; left: 0; border-top-width: 1.5px; border-left-width: 1.5px; }
+.epigraph::after { right: 0; bottom: 0; border-right-width: 1.5px; border-bottom-width: 1.5px; }
+.hero-cite { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin: 16px 0 0; font-size: 13px; color: var(--ink-soft); letter-spacing: .14em; }
+.hero-cite::before { content: ""; width: 32px; height: 1px; background: var(--gold); }
+.hero-cite cite { font-style: normal; text-transform: uppercase; }
 .hero h1 em { font-style: normal; color: var(--lilac); }
 .hero-en { margin: 18px 0 36px; color: var(--ink-soft); font-size: 15px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
@@ -192,7 +200,10 @@ a { color: var(--lilac); }
   .topbar nav a[href="#logo"] { display: none; }
 }
 @media (max-width: 520px) {
-  .hero h1 { font-size: clamp(18px, 5.7vw, 24px); }
+  .hero h1 { font-size: clamp(17px, 5.3vw, 24px); }
+  .epigraph { padding: 20px 22px 18px; }
+  .epigraph::before, .epigraph::after { width: 28px; height: 28px; }
+  .hero-zh { margin-left: 22px; }
   .steps { grid-template-columns: 1fr; }
   .finale-card { margin-left: 16px; margin-right: 16px; }
 }
